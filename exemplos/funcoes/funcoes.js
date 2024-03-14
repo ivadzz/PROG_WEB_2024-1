@@ -6,7 +6,7 @@ function imprimirOperacao(){
 
 imprimirOperacao();
 
-function imprimirOperacaoV2(a, b) {
+/*function imprimirOperacaoV2(a, b) {
     console.log(`O resultado da soma entre ${a} e ${b} é ${a + b}`);   
 }
 
@@ -39,4 +39,4 @@ imprimirOperacaoV3(2, 3, '+');
 imprimirOperacaoV3(2, 3, '-');
 imprimirOperacaoV3("2", "3", '*');
 imprimirOperacaoV3(2, 3, '/');
-imprimirOperacaoV3(2, 3, 'a');
+imprimirOperacaoV3(2, 3, 'a');*/
