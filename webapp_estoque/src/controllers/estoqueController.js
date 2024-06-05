@@ -1,4 +1,4 @@
-const usuario = require('../models/usuario');
+const Usuario = require('../models/usuario');
 
 function indexView(req, res){
     res.render('index.html');
@@ -10,20 +10,18 @@ function CriarContaView(req, res){
 
 function cadastrarUsuario(req,res){
     let usuario = {
-        email: req.body.email,
-        senha: req.body.senha,
+        email : req.body.email,
+        senha : req.body.senha,
         perfil: req.body.perfil,
     }
 
-    usuario.create(usuario).then(()=>{
-        res.redirect('/?cadastrar_usuario=true')
+    Usuario.create(usuario).then(()=>{
+        res.redirect('/?cadastrar_usuario=true');
     }).catch((err)=>{
         console.log(err);
-        res.redirect('/?cadastrar_usuario=false')
+        res.redirect('/?cadastrar_usuario=false');
+    });    
 
-    });
-
-    res.redirect('/');
 }
 
 module.exports = {
